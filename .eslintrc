@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "class-methods-use-this": 0,
+    "import/no-named-as-default": 0,
+    "react/prop-types": false,
+    "react/forbid-prop-types": "off",
+    "react/button-has-type": false,
+    "max-len": ["error", { "code": 120, "ignoreUrls": true, "ignoreStrings": true }],
+    "camelcase": "warn",
+    "no-plusplus": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": "off",
+    "import/order": "off",
+    "no-shadow": "off",
+    "object-curly-newline": "off",
+    "no-mixed-operators": "off",
+    "no-return-assign":"off",
+    "no-bitwise":"off",
+    "no-case-declarations": "off",
+    "no-confusing-arrow": "off",
+    "prefer-destructuring": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "import/prefer-default-export": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-multi-comp": "warn",
+    "react/no-did-update-set-state": "warn",
+    "react/sort-comp": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  },
+  "globals": {
+    "bluesnap": true,
+    "React": true
+  }
+}

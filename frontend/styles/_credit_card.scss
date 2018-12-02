@@ -1,0 +1,19 @@
+.credit-card {
+  background-color: #313137;
+  width: 80px;
+  height: 10px;
+  border: solid #8C878C 10px;
+  margin-left: 105px;
+
+  &.is-inside {
+    border: solid green 10px;
+  }
+
+  i {
+    font-size: 72px;
+    transform: rotate(-90deg);
+    color: green;
+    margin-top: 9px;
+    cursor: pointer;
+  }
+}
