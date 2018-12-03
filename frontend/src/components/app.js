@@ -5,9 +5,9 @@ import '../../styles/app.scss';
 
 // Components
 import Screen from './screen';
-import Cash from "./cash";
-import CreditCard from "./creditCard";
-import Button from "./common/button";
+import Cash from './cash';
+import CreditCard from './creditCard';
+import Button from './common/button';
 
 // Actions
 import {

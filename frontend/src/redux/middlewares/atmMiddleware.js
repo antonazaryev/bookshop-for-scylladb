@@ -11,9 +11,9 @@ import {
   ACTION,
   MONEY,
   CANCEL
-} from "../../fsm/fsmConstants";
+} from '../../fsm/fsmConstants';
 
-import { FSMInstance } from "../store";
+import { FSMInstance } from '../store';
 
 const ATMMiddleware = () => next => (action) => {
   const { payload, type } = action;
