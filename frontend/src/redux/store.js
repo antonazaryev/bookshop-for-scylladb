@@ -1,14 +1,13 @@
 import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
 
 import rootReducer from './reducers/rootReducer';
 import ATMMiddleware from './middlewares/atmMiddleware';
 
 // FSM
-import FSM from "../fsm/fsm";
-import FSM_STATES, { INITIAL_STATE } from "../fsm/fsmStates";
+import FSM from '../fsm/fsm';
+import FSM_STATES, { INITIAL_STATE } from '../fsm/fsmStates';
 
-import { setViewStateAction } from "../redux/actions/atmActions";
+import { setViewStateAction } from '../redux/actions/atmActions';
 
 const store = createStore(
   rootReducer,

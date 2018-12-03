@@ -23,7 +23,7 @@ const STATES = {
     textOnScreen: 'Card incorrect'
   },
   RETURN_CARD: {
-    textOnScreen: 'Returning the card'
+    textOnScreen: 'Returning card'
   },
   WAITING_FOR_PIN: {
     textOnScreen: 'Enter your Pin',

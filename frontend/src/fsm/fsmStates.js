@@ -1,6 +1,4 @@
-import axios from 'axios';
-
-import {
+import  {
   CARD,
   PIN,
   MONEY,
@@ -31,6 +29,12 @@ import {
   GIVING_MONEY,
   WAITING_TO_RECEIVE_MONEY
 } from './fsmConstants';
+import {
+  isValidCard,
+  isCardPinValid,
+  isAmountEnough,
+  wait
+} from './fsmStateUtils';
 
 const FSM_STATES = {
   WAITING_FOR_CARD: {
@@ -181,35 +185,6 @@ const FSM_STATES = {
     }
   }
 };
-
-const isValidCard = async(card) => {
-  try {
-    const response = await axios.post('/api/validate-card', card);
-    return response.data.success;
-  } catch (e) {
-    return false;
-  }
-};
-
-const isCardPinValid = async(card, pin) => {
-  try {
-    const response = await axios.post('/api/validate-card-pin', { card, pin });
-    return response.data.success;
-  } catch (e) {
-    return false;
-  }
-};
-
-const isAmountEnough = async(card, amount) => {
-  try {
-    const response = await axios.post('/api/check-balance', { card, amount });
-    return response.data.success;
-  } catch (e) {
-    return false;
-  }
-};
-
-const wait = async(seconds) => await new Promise(resolve => setTimeout(resolve, 1000 * seconds));
 
 export const INITIAL_STATE = WAITING_FOR_CARD;
 export default FSM_STATES;

@@ -15,7 +15,7 @@ export default class FSM {
     }
   };
 
-  executeState = async (stateName, stateParams = {}) => {
+  executeState = (stateName, stateParams = {}) => {
     if (stateName === this.initialState) {
       this.resetParams();
     }
@@ -26,7 +26,7 @@ export default class FSM {
 
       const { onExecute } = this.currentState;
       if (onExecute) {
-        await onExecute.call(this, stateParams);
+        onExecute.call(this, stateParams);
       }
     } else {
       console.error("No such state", stateName);
