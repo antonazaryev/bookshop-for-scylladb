@@ -1,9 +1,10 @@
 @import "reset";
 
-.main {
+body {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row;
 }

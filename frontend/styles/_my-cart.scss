@@ -1,0 +1,24 @@
+.my-cart {
+  padding: 20px;
+  border: solid 1px #000;
+  margin: 10px;
+  height: 125px;
+  width: 280px;
+  overflow-y: auto;
+
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  input {
+    width: 25px;
+  }
+}

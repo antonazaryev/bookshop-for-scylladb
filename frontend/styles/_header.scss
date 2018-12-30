@@ -1,4 +1,19 @@
 .header {
+  width: 100%;
+  background-color: #24292e;
+  color: hsla(0,0%,100%,.75);
+  padding: 12px;
+  display: flex;
 
+  .title {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  .my-cart-button {
+    cursor: pointer;
+    border: solid 1px #7b7b7b;
+    padding: 10px;
+  }
 }
 

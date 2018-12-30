@@ -3,4 +3,4 @@ export const ADD_TO_CART = 'ADD_TO_CART';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 export const UPDATE_CART_QUANTITY = 'UPDATE_CART_QUANTITY';
 export const TOGGLE_CART_VIEW = 'TOGGLE_CART_VIEW';
-
+export const LOAD_ITEMS = 'LOAD_ITEMS';

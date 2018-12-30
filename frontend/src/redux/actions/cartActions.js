@@ -5,14 +5,14 @@ import {
   TOGGLE_CART_VIEW
 } from '../constants/actionConstants';
 
-export const addToCartAction = item => ({
+export const addToCartAction = itemId => ({
   type: ADD_TO_CART,
-  payload: item
+  payload: { itemId }
 });
 
 export const removeFromCartAction = itemId => ({
   type: REMOVE_FROM_CART,
-  payload: itemId
+  payload: { itemId }
 });
 
 export const updateCartQuantityAction = (itemId, newQuantity) => ({
