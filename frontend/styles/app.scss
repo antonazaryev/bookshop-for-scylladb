@@ -1,25 +1,9 @@
 @import "reset";
 
-body {
-  font-family: 'Press Start 2P', cursive;
-}
-
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-
-  .tools {
-    display: flex;
-    position: relative;
-    top: -55px;
-  }
-
-  .main-buttons {
-    display: flex;
-    padding-top: 20px;
-    height: 35px;
-  }
 }

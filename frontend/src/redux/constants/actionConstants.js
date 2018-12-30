@@ -1,7 +1,6 @@
 // ACTIONS
-export const SET_VIEW_STATE = 'SET_VIEW_STATE';
-export const CARD_INSERTED = 'CARD_INSERTED';
-export const PIN_ENTERED = 'PIN_ENTERED';
-export const SCREEN_ACTION = 'SCREEN_ACTION';
-export const MONEY_ACTION = 'MONEY_ACTION';
-export const CANCEL_ACTION = 'CANCEL_ACTION';
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+export const UPDATE_CART_QUANTITY = 'UPDATE_CART_QUANTITY';
+export const TOGGLE_CART_VIEW = 'TOGGLE_CART_VIEW';
+

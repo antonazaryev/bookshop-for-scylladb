@@ -1,10 +1,7 @@
 import { CARD_INSERTED, SET_VIEW_STATE } from '../constants/actionConstants';
 
-// FSM
-import STATES, { DEFAULT_STATE } from '../constants/statesConstants';
-
 const initialState = {
-  currentState: STATES[DEFAULT_STATE]
+  itemsInCart: []
 };
 
 export default (state = initialState, action) => {

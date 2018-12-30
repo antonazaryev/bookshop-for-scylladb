@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import atmReducer from './atmReducer';
+import cartReducer from './cartReducer';
 
 export default combineReducers({
-  atmReducer
+  cartReducer
 });
